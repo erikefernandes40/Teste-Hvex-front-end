@@ -1,0 +1,93 @@
+:root{
+    --blue: #10486D;
+    --dark-gray: #484A4C;
+    --light-gray: rgba(16, 72, 109, 0.5);
+    --purple-dark: #1C2C44;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body.body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./images/cyber-g556f315ae_1920\ 1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    min-width:508px ;
+    min-height: 475px;
+    background-color: white;
+    border-radius: 8px;
+}
+.logo p{
+    width: 100%;
+    color: var(--blue);
+    font-size: 40px;
+    margin-top: 4%;
+    text-align: center;
+}
+
+.label{
+    padding: 20px;
+}
+
+.label div{
+    margin-bottom: 25px ;
+}
+
+.label label{
+    color: var(--dark-gray);
+}
+
+.label input{
+    width: 99%;
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid #c4c4c4;
+    
+}
+
+.button{
+    text-align: center;
+    margin-top: -15px;
+}
+
+.cadastrar{
+    text-align: center;
+    margin-top: -15px;
+}
+
+
+
+.button button{
+    padding: 15px 50px;
+    color: white;
+    background-color: var(--blue);
+    border: none;
+    border-radius: 8px;
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.button.cadastrar button{
+    background-color: var(--light-gray);
+}
+
+.button a{
+    
+    color: var(--blue);
+    font-size: 19px;
+}
+
