@@ -4,6 +4,7 @@
     --light-gray: rgba(16, 72, 109, 0.5);
     --purple-dark: #1C2C44;
 
+
 }
 *{
     margin: 0;
@@ -30,7 +31,7 @@ body.body{
     background-color: white;
     border-radius: 8px;
 }
-.logo p{
+.logo{
     width: 100%;
     color: var(--blue);
     font-size: 40px;
@@ -54,7 +55,7 @@ body.body{
     width: 99%;
     border-radius: 4px;
     padding: 10px;
-    border: 1px solid #c4c4c4;
+    border: 1px solid var(--light-gray);
     
 }
 
@@ -90,4 +91,62 @@ body.body{
     color: var(--blue);
     font-size: 19px;
 }
+x'
 
+header{
+    background-color: var(--blue);
+    color: white;
+    width: 100%;
+
+}
+
+nav{
+    display: flex;
+    
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.container2{
+    width: 1000px;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+
+.campo-pesquisa{
+    width:700px;
+}
+
+.input-pesquisa{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.campo-pesquisa p{
+    color: var(--dark-gray);
+    margin-top: 40px;
+    width:100%;
+}
+
+.input-pesquisa input{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid var(--light-gray);
+}
+
+.input-pesquisa .search{
+    padding: .3rem 0.8rem;
+    border-radius: 8px;
+    background-color: var(--purple-dark);
+}
