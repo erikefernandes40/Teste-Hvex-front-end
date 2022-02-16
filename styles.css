@@ -1,8 +1,10 @@
 :root{
     --blue: #10486D;
+    --opacity-blue: rgba(16, 72, 109, 0.5);
     --dark-gray: #484A4C;
-    --light-gray: rgba(16, 72, 109, 0.5);
+    --light-gray: #C4C4C4;
     --purple-dark: #1C2C44;
+    --red: #CF1F2A;
 
 
 }
@@ -26,10 +28,11 @@ body.body{
 }
 
 .container{
-    min-width:508px ;
-    min-height: 475px;
+    min-width:35vw ;
     background-color: white;
     border-radius: 8px;
+    padding: 10px 5px 30px;
+    overflow: hidden;
 }
 .logo{
     width: 100%;
@@ -44,7 +47,7 @@ body.body{
 }
 
 .label div{
-    margin-bottom: 25px ;
+    margin-bottom: 35px ;
 }
 
 .label label{
@@ -69,10 +72,15 @@ body.body{
     margin-top: -15px;
 }
 
+.button.cadastrar button{
+    background-color: var(--opacity-blue);
+    padding: 12px 80px;
+    font-size: 19px;
+}
 
 
 .button button{
-    padding: 15px 50px;
+    padding: 12px 90px;
     color: white;
     background-color: var(--blue);
     border: none;
@@ -80,18 +88,16 @@ body.body{
     font-size: 19px;
     font-weight: 700;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
-.button.cadastrar button{
-    background-color: var(--light-gray);
-}
+
 
 .button a{
-    
     color: var(--blue);
     font-size: 19px;
 }
-x'
+
 
 header{
     background-color: var(--blue);
@@ -105,30 +111,44 @@ nav{
     
 }
 
+nav p{
+    margin-left: 20px;
+}
+
 nav a{
+    margin-left: 20px;
     color: white;
     text-decoration: none;
 }
 
 .container2{
-    width: 1000px;
+    width: 80vw;
     height: 13vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+}
 
+.container2-b{
+    display: none;
+    height: 13vh;
+}
+
+.container2-b a{
+    color: white;
+    text-decoration: none;
 }
 
 .campo-pesquisa{
-    width:700px;
+    width: 55vw;
+    margin: 0 auto;
 }
 
 .input-pesquisa{
     width: 100%;
     display: flex;
-    align-items: center;
-    
+    align-items: center;   
 }
 
 .campo-pesquisa p{
@@ -138,15 +158,111 @@ nav a{
 }
 
 .input-pesquisa input{
-    width: 100%;
-    margin-top: 10px;
-    border-radius: 4px;
-    padding: 10px;
+    width: 90%;
+    font-size: 16px;
+    margin-top: 11px;
+    border-radius: 8px;
+    padding: 16px 25px;
+    outline: 0;
     border: 1px solid var(--light-gray);
+    margin-right: 10px ;
 }
 
-.input-pesquisa .search{
-    padding: .3rem 0.8rem;
+.input-pesquisa div a{
+    margin-top: 10px;
+    padding: 9px 14px;  
     border-radius: 8px;
     background-color: var(--purple-dark);
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--blue);
+    
+}
+
+.container3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.usuario{
+    width: 55vw;
+    margin: 40px auto;
+    border: 1px solid var(--light-gray);
+    box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    display: flex;
+    padding: 25px;
+    color: var(--dark-gray);
+}
+
+.foto-profile{
+    width: 30%;
+    display: flex;
+}
+
+.foto-profile img{
+
+    border-radius: 50%;
+    border: 9px solid var(--purple-dark);
+}
+
+.info-profile{
+    width: 70%;
+    margin-left: 10px;
+}
+
+.info-profile p{
+    margin-bottom:15px;
+}
+
+.info-user{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-user p{
+    margin-bottom: 5px;
+}
+
+.bio{
+    display: flex;
+    text-align: justify;
+    
+}
+.bio p{
+    margin-right: 4px;
+}
+
+.info-profile a{
+    position: relative;
+    top: 15px;
+    color: var(--dark-gray);
+}
+
+@media screen and (max-width:600px) {
+    .container2{
+        display: none;
+    }
+
+    .container2-b{
+        display: block;
+    }
+
+    .cabecalho{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .campo-pesquisa{
+        width: 90vw;
+    }
+
+    .usuario{
+        width: 90vw;
+        flex-direction: column;
+        align-items: center;
+    }
 }
