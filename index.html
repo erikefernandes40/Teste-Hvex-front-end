@@ -21,23 +21,23 @@
                 <div class="label">
                     <div>
                         <label for="">E-mail</label> <br>
-                        <input type="text" value="dev.user@example.com"> <br>
+                        <input type="text" placeholder="dev.user@example.com" id="email"> <br>
                     </div>
 
                     <div>
                         <label for="">Senha</label> <br>
-                        <input type="password" value="********"> <br>
+                        <input type="password" placeholder="********" id="senha"> <br>
                     </div>
     
                 </div>
 
                 <div class="button">
-                    <button>LOGIN</button> <br>
+                    <button type="submit" id="button" onclick="logar()">LOGIN</button> <br>
                     <a href="./cadastro.html">Registrar</a>
                 </div>
 
             </form>
         </div>
-    <script src="./scripts.js"></script>
+    <script src="./scripts.js" type="module"></script>
 </body>
 </html>

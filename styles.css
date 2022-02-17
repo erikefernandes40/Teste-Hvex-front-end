@@ -132,7 +132,7 @@ nav a{
 
 .container2-b{
     display: none;
-    height: 13vh;
+    height: 20vh;
 }
 
 .container2-b a{
@@ -247,13 +247,21 @@ nav a{
     }
 
     .container2-b{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
     }
 
     .cabecalho{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
+        padding: 20px;
+    }
+
+    .cabecalho img{
+        width: 45%;
     }
 
     .campo-pesquisa{
@@ -264,5 +272,9 @@ nav a{
         width: 90vw;
         flex-direction: column;
         align-items: center;
+    }
+
+    .nome-fulano{
+        margin: -30px auto;
     }
 }
